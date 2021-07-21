@@ -18,7 +18,6 @@ export class AppComponent {
   fetchRecentPost(): void {
     this.recentPosts = undefined;
     this.contentService.loadPosts(5).subscribe(posts => this.recentPosts = posts);
-
   }
 
 }
