@@ -10,19 +10,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { ThemeModule } from './themes/theme.module';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     CoreModule,
     UserModule,
     SharedModule,
-    AppRoutingModule,
-    ThemeModule
+    ThemeModule,
+    AppRoutingModule
   ],
   providers: [
     ContentService

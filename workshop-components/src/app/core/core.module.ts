@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LocalStorage } from './injection-token';
 import { AuthActivate } from './guards/auth.activate';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,7 +16,8 @@ import { AuthActivate } from './guards/auth.activate';
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent,
